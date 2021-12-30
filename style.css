@@ -6,51 +6,75 @@ body {
 }
 
 h1 {
+  color: #162955;
+}
+
+h1,
+#table tbody tr > td+td {
   text-transform: capitalize;
+}
+
+#table tbody tr:nth-child(4) td > span, 
+#table tbody tr:nth-child(-n+2) td+td:nth-child(-n+4),
+#table tbody tr+tr:nth-child(-n+2) td+td:nth-child(-n+5) {
+  text-transform: uppercase;
+}
+
+h1,
+#table thead td,
+#table tbody tr td+td
+ {
   text-align: center;
 }
 
 #table {
   margin: auto;
+
   border-collapse: collapse;
   border-radius: 7px;
+
   overflow: hidden;
 }
 
-#table > thead td {
-  padding: 20px;
-  color: white;
+#table thead td {
+  padding: 15px 20px;
+  
+  font-size: 18px;
   font-weight: 600;
-  text-align: center;
+  color: white;
 }
 
-#table > thead td+td {
-  width: 130px;
-  height: 150px;
+#table thead td+td {
+  width: 150px;
+  height: 160px;
 }
 
-#table > thead span {
+#table thead td > span {
   display: inline-block;
-  font-size: 32px;
-  margin: 20% 10% 0 10%;
+  
+  font-size: 35px;
+  margin: 25% 10% 9% 10%;
 }
 
-#table > thead td:nth-child(1) {
+#table thead td:first-child {
+  width: 240px;
+  height: 160px;
+
   background-color: #7887ab;
 }
 
-#table > thead td:nth-child(2) {
+#table thead td:nth-child(2) {
   background-color: #4f628e;
 }
 
-#table > thead td:nth-child(3) {
+#table thead td:nth-child(3) {
   background-color: #2e4172;
 }
 
-#table > thead td:nth-child(4) {
+#table thead td:nth-child(4) {
   background-color: #162955;
 }
 
-#table > thead td:nth-child(5) {
+#table thead td:last-child {
   background-color: #061539;
 }
