@@ -112,6 +112,14 @@ h1,
   padding-left: 3.5%;
 }
 
+/* fix text-overflow lower tbody row in small size table */
+
+#table tbody tr:nth-child(6) td:first-child{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #table tbody tr:nth-child(4) td > span,
 #table tbody tr:first-child td+td:nth-child(-n+4),
 #table tbody tr:nth-child(2) td+td:nth-child(-n+5) {
