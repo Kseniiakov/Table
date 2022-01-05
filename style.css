@@ -9,20 +9,17 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 40px;
   height: 5vh;
 
   color: #162955;
 
   margin: 0;
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 main {
-  height: 80vh;
-  min-height: 522px;
-
-  margin: 5vh 0;
+  margin-top: 4vh;
 }
 
 h1,
@@ -38,20 +35,16 @@ h1,
 }
 
 #table {
-  max-width: 940px;
-  width: 49vw;
-  min-width: 742px;
-
   margin: auto;
 
   border-collapse: collapse;
-  border-radius: 10px;
+  border-radius: 20px;
 
   overflow: hidden;
 }
 
 #table td {
-  padding: 1.9%;
+  padding: 1.25em 2.5em;
 }
 
 /* Table head */
@@ -63,24 +56,22 @@ h1,
 }
 
 #table thead td + td {
-  width: 16.66%;
-  min-width: 128px;
-
   text-transform: lowercase;
+
+  padding: 1em 1.8em;
 }
 
 #table thead td > span {
   display: inline-block;
 
-  font-size: 35px;
-  padding: 27% 19% 8% 19%;
+  font-size: 40px;
+  padding: 33px 0px 6px 0px;
 }
 
 #table thead td:first-child {
-  width: 30%;
-  min-width: 203px;
-
   background-color: #7887ab;
+
+  padding: 1em 2.6em;
 }
 
 #table thead td:nth-child(2) {
@@ -96,9 +87,6 @@ h1,
 }
 
 #table thead td:last-child {
-  width: 20%;
-  min-width: 155px;
-
   background-color: #061539;
 }
 
@@ -106,24 +94,6 @@ h1,
 
 #table tbody {
   letter-spacing: 0.02em;
-}
-
-#table tbody tr td:first-child {
-  padding-left: 3.5%;
-}
-
-/* Fix text-overflow */
-
-#table tbody tr:nth-child(6) td:first-child{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#table tbody tr:nth-child(4) td > span,
-#table tbody tr:first-child td+td:nth-child(-n+4),
-#table tbody tr:nth-child(2) td+td:nth-child(-n+5) {
-  text-transform: uppercase;
 }
 
 #table tbody tr:nth-child(odd) td:nth-child(odd),
@@ -143,9 +113,12 @@ h1,
 
 /* Table footer */
 
+#table tfoot tr td {
+  padding: 1em 2.0em;
+}
+
 #table tfoot tr td > a {
   width: 100%;
-  max-width: 110px;
 
   display: inline-block;
 
